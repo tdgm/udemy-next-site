@@ -1,0 +1,16 @@
+.navbar-brand {
+  display: block;
+  margin: 0 auto;
+}
+.nav.nav-pills {
+  margin-bottom: 15px;
+}
+.nav-pills .nav-link {
+  color: var(--default-1);
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+  color: var(--clr_white);
+  background-color: var(--default-1);
+}
+

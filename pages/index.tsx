@@ -1,50 +1,32 @@
-import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import getPostList from '@shared/util';
-import Header from'@components/header';
-import Navigation from '@components/navigation';
+import Header from '@components/header';
+import Tabs from '@components/tabs';
+import Footer from '@components/footer';
+import Credits from '@components/credits';
 
 type PostList = string[];
 
-function Home({ posts }:InferGetStaticPropsType<typeof getStaticProps> ) {
+function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        
+        <title>Cheff Já - Seu refeição 5 estrelas em um click! - Rio de Janeiro</title>
       </Head>
 
       <main>
-        <Navigation />
         <Header />
-        {posts.length > 0 && (
-          <ul>
-          {posts.map((slug) => (
-            <li key={slug}>
-            <Link href={`post/${slug}`}>
-              <a>
-                {slug.replace(/-/g, ' ')}
-              </a>
-            </Link>
-          </li>  
-          ))}
-          </ul>
-        )}
+        
+        <Tabs />
+
+        <Footer />
+        
+        <Credits />
       </main>
       
     </>
 
   )
-}
-
-export const getStaticProps = async () => {
-  const posts:PostList = getPostList()
-  return {
-    props: {
-      posts
-    }
-  }
 }
 
 export default Home

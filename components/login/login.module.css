@@ -1,0 +1,87 @@
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+@media (max-width: 320px) {
+  .login-container h3 {
+    font-size: 1.65rem;
+ }
+}
+.login-container form {
+  padding: 10%;
+}
+.login-container form .btn-spacer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 320px) {
+  .login-container form .btn-spacer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+ }
+}
+
+.login-form-1 {
+  padding: 5%;
+}
+@media (min-width: 1024px) {
+  .login-form-1 {
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+ }
+}
+.login-form-1 h3 {
+  text-align: center;
+  color: var(--clr_black);
+}
+.login-form-1 .btnSubmit {
+  font-weight: 600;
+  color: var(--clr_white);
+  background-color: var(--default-1);
+}
+.login-form-1 .ForgetPwd {
+  color: var(--default-1);
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-form-2 {
+  padding: 5%;
+  background: var(--default-1);
+}
+@media (min-width: 1024px) {
+  .login-form-2 {
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+ }
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: var(--clr_white);
+}
+.login-form-2 .btnSubmit {
+  font-weight: 600;
+  color: #392f5a ff;
+  background-color: var(--clr_white);
+}
+.login-form-2 .ForgetPwd {
+  color: var(--clr_white);
+  font-weight: 600;
+  text-decoration: none;
+}
+.btnSubmit, .ForgetPwd {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 320px) {
+  .btnSubmit, .ForgetPwd {
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 1.2rem;
+ }
+}

@@ -1,0 +1,18 @@
+.credits {
+  padding: 25px 0;
+  background-color: var(--clr_grey);
+}
+.credits .powered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.credits .powered span {
+  margin-left: 4px;
+}
+@media (max-width: 320px) {
+  .credits .powered span {
+    font-size: 10px;
+ }
+}
